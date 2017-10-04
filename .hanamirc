@@ -1,0 +1,4 @@
+project=count_the_cash
+architecture=container
+test=minitest
+template=erb
