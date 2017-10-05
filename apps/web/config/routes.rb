@@ -1,1 +1,2 @@
-root to: 'home#index'
+get '/envelopes', to: 'envelopes#index'
+root to: 'envelopes#index'
