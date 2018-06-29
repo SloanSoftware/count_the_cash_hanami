@@ -14,7 +14,10 @@ branches:
       # Required. Require at least one approving review on a pull request, before merging. Set to null to disable.
       required_pull_request_reviews:
         # Specify which users and teams can dismiss pull request reviews. Pass an empty dismissal_restrictions object to disable. User and team dismissal_restrictions are only available for organization-owned repositories. Omit this parameter for personal repositories.
-        dismissal_restrictions: {}
+        dismissal_restrictions: {
+            teams: [],
+            users: []
+        }
         # Dismiss approved reviews automatically when a new commit is pushed.
         dismiss_stale_reviews: false
         # Blocks merge until code owners have reviewed.
