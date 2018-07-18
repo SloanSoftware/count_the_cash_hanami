@@ -40,5 +40,4 @@ branches:
         # Blocks merge until code owners have reviewed.
         require_code_owner_reviews: false
       restrictions:
-        teams:
-          - 'sloans'
+        teams: ['sloans']
