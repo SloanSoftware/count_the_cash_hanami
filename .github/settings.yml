@@ -1,41 +1,32 @@
-
+---
+branches:
+  -
+    name: master
+    protection:
+      enforce_admins: false
+      required_pull_request_reviews:
+        dismiss_stale_reviews: true
+        dismissal_restrictions:
+          teams:
+            - sloans
+          users: []
+        require_code_owner_reviews: false
+      required_status_checks:
+        contexts: []
+        strict: true
+      restrictions: "null"
 repository:
-  private: false
+  allow_merge_commit: false
+  allow_rebase_merge: true
+  allow_squash_merge: true
+  default_branch: master
   has_issues: true
   has_wiki: true
-  default_branch: master
-  allow_merge_commit: false
-  allow_squash_merge: true
-  allow_rebase_merge: true
-
+  private: false
 teams:
-  - name: sloans
+  -
+    name: sloans
     permission: admin
-  - name: others
+  -
+    name: others
     permission: admin
-
-
-branches:
-  - name: 'master'
-    # https://developer.github.com/v3/repos/branches/#update-branch-protection
-    # Leaving this empty will disable branch protection for this branch.
-    protection:
-      # Required. Require status checks to pass before merging. Set to null to disable
-      required_status_checks:
-        # Required. Require branches to be up to date before merging.
-        strict: true
-        # Required. The list of status checks to require in order to merge into this branch
-        contexts: []
-      # Required. Enforce all configured restrictions for administrators. Set to true to enforce required status checks for repository administrators. Set to null to disable.
-      enforce_admins: false
-      # Required. Require at least one approving review on a pull request, before merging. Set to null to disable.
-      required_pull_request_reviews:
-        # Specify which users and teams can dismiss pull request reviews. Pass an empty dismissal_restrictions object to disable. User and team dismissal_restrictions are only available for organization-owned repositories. Omit this parameter for personal repositories.
-        dismissal_restrictions:
-          teams: ['sloans'],
-          users: []
-        # Dismiss approved reviews automatically when a new commit is pushed.
-        dismiss_stale_reviews: true
-        # Blocks merge until code owners have reviewed.
-        require_code_owner_reviews: false
-      restrictions: 'null'
