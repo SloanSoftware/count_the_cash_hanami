@@ -41,4 +41,4 @@ branches:
         require_code_owner_reviews: false
       restrictions:
         teams:
-          - sloans
+          - 'sloans'
