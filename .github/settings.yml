@@ -39,4 +39,6 @@ branches:
         dismiss_stale_reviews: true
         # Blocks merge until code owners have reviewed.
         require_code_owner_reviews: false
-      restrictions: 'null'
+      restrictions:
+        teams:
+          - sloans
