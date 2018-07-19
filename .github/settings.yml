@@ -8,12 +8,15 @@ branches:
         dismissal_restrictions:
           teams:
             - sloans
-          users: []
+          users:
+            - jwsloan
         require_code_owner_reviews: false
       required_status_checks:
         contexts: []
         strict: true
-      restrictions: "null"
+      restrictions:
+        users:
+          - jwsloan
 repository:
   allow_merge_commit: false
   allow_rebase_merge: true
