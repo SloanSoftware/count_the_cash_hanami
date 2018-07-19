@@ -4,7 +4,7 @@ branches:
     protection:
       enforce_admins: false
       required_pull_request_reviews:
-        dismiss_stale_reviews: true
+        dismiss_stale_reviews: false
         dismissal_restrictions:
           teams:
             - sloans
