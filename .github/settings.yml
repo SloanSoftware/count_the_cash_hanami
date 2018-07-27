@@ -26,6 +26,3 @@ repository:
   has_issues: true
   has_wiki: true
   private: false
-teams:
-  - name: core
-    permission: admin
