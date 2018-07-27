@@ -17,7 +17,8 @@ branches:
       restrictions:
         users:
           - jwsloan
-        teams: []
+        teams:
+          - sloans
 repository:
   allow_merge_commit: false
   allow_rebase_merge: true
@@ -26,3 +27,10 @@ repository:
   has_issues: true
   has_wiki: true
   private: false
+teams:
+  -
+    name: sloans
+    permission: admin
+  -
+    name: others
+    permission: admin
