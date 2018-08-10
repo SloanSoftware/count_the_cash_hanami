@@ -32,5 +32,5 @@ teams:
     name: sloans
     permission: admin
   -
-    name: other_folk
+    name: others
     permission: admin
