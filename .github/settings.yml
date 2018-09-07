@@ -10,7 +10,7 @@ branches:
             - sloans
           users:
             - jwsloan
-        require_code_owner_reviews: false
+        require_code_owner_reviews: true
       required_status_checks:
         contexts: []
         strict: true
