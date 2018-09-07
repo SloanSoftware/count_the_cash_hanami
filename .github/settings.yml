@@ -27,10 +27,6 @@ repository:
   has_issues: true
   has_wiki: true
   private: false
-teams:
-  -
-    name: sloans
-    permission: admin
-  -
-    name: others
-    permission: admin
+labels:
+  - name: bug
+    color: CC0000
