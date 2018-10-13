@@ -32,3 +32,8 @@ labels:
     color: CC0000
   - name: feature
     color: 336699
+teams:
+  - name: sloans
+    permission: admin
+  - name: others
+    permission: push
