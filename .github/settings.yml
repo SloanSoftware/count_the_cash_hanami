@@ -35,5 +35,3 @@ labels:
 teams:
   - name: sloans
     permission: admin
-  - name: others
-    permission: push
