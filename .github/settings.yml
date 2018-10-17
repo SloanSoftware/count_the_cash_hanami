@@ -1,39 +1,42 @@
-branches:
-  -
-    name: master
-    protection:
-      enforce_admins: false
-      required_pull_request_reviews:
-        dismiss_stale_reviews: true
-        dismissal_restrictions:
-          teams:
-            - sloans
-          users:
-            - jwsloan
-        require_code_owner_reviews: true
-      required_status_checks:
-        contexts: []
-        strict: true
-      restrictions:
-        users:
-          - jwsloan
-        teams:
-          - sloans
+# These settings are synced to GitHub by https://github.com/probot/settings
+
 repository:
+  private: true
+  has_issues: true
+  has_projects: false
+  has_wiki: false
+  has_downloads: false
+  default_branch: master
+  allow_squash_merge: true
   allow_merge_commit: false
   allow_rebase_merge: true
-  allow_squash_merge: true
-  default_branch: master
-  has_issues: true
-  has_wiki: true
-  private: false
 labels:
   - name: bug
-    color: CC0000
-  - name: feature
-    color: 336699
-teams:
-  - name: sloans
-    permission: admin
-  - name: others
-    permission: push
+    color: fbca04
+  - name: security
+    color: ee0701
+  - name: "help wanted"
+    color: 008672
+  - name: "good first issue"
+    color: 7057ff
+branches:
+  - name: master
+    protection:
+      enforce_admins: true
+      required_pull_request_reviews:
+        required_approving_review_count: 1
+        dismiss_stale_reviews: false
+        require_code_owner_reviews: true
+        dismissal_restrictions:
+          teams: []
+      # Required. Require status checks to pass before merging. Set to null to disable
+      required_status_checks:
+        # Required. Require branches to be up to date before merging.
+        strict: true
+        # Required. The list of status checks to require in order to merge into this branch
+        contexts: []
+      # Required. Enforce all configured restrictions for administrators. Set to true to enforce required status checks for repository administrators. Set to null to disable.
+      enforce_admins: true
+      # Required. Restrict who can push to this branch. Team and user restrictions are only available for organization-owned repositories. Set to null to disable.
+      restrictions:
+        teams: []
