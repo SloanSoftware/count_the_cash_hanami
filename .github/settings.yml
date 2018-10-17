@@ -26,7 +26,7 @@ branches:
         required_approving_review_count: 1
         dismiss_stale_reviews: false
         require_code_owner_reviews: true
-        dismissal_restrictions:
+        dismissal_restrictions: {}
       # Required. Require status checks to pass before merging. Set to null to disable
       required_status_checks:
         # Required. Require branches to be up to date before merging.
