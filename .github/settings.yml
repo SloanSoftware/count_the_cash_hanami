@@ -10,4 +10,6 @@ branches:
   - name: master
     protection:
       required_pull_request_reviews:
-        required_approving_review_count: 2
+        required_approving_review_count: 1
+      enforce_admins: true
+
