@@ -1,15 +1,2 @@
 # These settings are synced to GitHub by https://github.com/probot/settings
 _extends: .github
-
-repository:
-  has_wiki: true
-labels:
-  - name: newlabel
-    color: ffffff
-branches:
-  - name: master
-    protection:
-      required_pull_request_reviews:
-        required_approving_review_count: 1
-      enforce_admins: false
-
