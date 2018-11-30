@@ -5,6 +5,11 @@ repository:
   allow_squash_merge: false
 
 branches:
+  - name: master
+    protection:
+      required_pull_request_reviews:
+        required_approving_review_count: 4
+
   - name: spike
     protection:
       required_pull_request_reviews:
