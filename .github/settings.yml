@@ -1,9 +1,5 @@
 _extends: .github #v1.0.0
 
-
-repository:
-  allow_squash_merge: false
-
 branches:
   - name: master
     protection:
