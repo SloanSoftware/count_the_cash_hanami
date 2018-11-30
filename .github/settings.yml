@@ -5,7 +5,15 @@ repository:
   allow_squash_merge: false
 
 branches:
-  - name: master
+  - name: spike
     protection:
       required_pull_request_reviews:
-        required_approving_review_count: 2
+        required_approving_review_count: 1
+        dismiss_stale_reviews: false
+        require_code_owner_reviews: true
+        dismissal_restrictions: {}
+      required_status_checks:
+        strict: true
+        contexts: []
+      enforce_admins: false
+      restrictions: 
