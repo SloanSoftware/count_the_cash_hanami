@@ -1,15 +1,5 @@
 _extends: .github #v1.0.0
 
 repository:
-  allow_squash_merge: false
-  
-labels:
-  - name: "good first issue"
-    color: 112233
-
-branches:
-  - name: master
-    protection:
-      required_pull_request_reviews:
-        required_approving_review_count: 2
-      enforce_admins: true
+  allow_squash_merge: true
+ 
