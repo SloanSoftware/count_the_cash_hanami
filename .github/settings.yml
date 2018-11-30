@@ -9,6 +9,3 @@ branches:
     protection:
       required_pull_request_reviews:
         required_approving_review_count: 6
-
-  - name: spike
-    protection: null
